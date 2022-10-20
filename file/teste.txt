@@ -1,0 +1,8 @@
+O objetivo deste trabalho é se familiarizar com os principais mecanismos de comunicação via RMI. Você deve desenvolver um programa simples em Java baseado em RMI que permitirá que um usuário possa ler um arquivo de texto, linha por linha em um servidor. O servidor deverá implementar os seguintes métodos:
+
+public boolean openFile(String filename): abre um arquivo, retornando true se o arquivo foi aberto com sucesso e false, caso contrário
+public String nextLine(): lê e retorna a próxima linha do arquivo. Retorna null se o arquivo chegou ao final ou se o arquivo não foi aberto.
+public boolean closeFile(): fecha o arquivo que foi aberto. Retorna true se o arquivo foi fechado com sucesso e false, caso contrário.
+
+
+Além do servidor, você deverá implementar um cliente que se conectará ao servidor. O cliente funcionará como o comando “cat” do linux. Ou seja, ele solicita ao servidor a abertura do arquivo e, em seguida, faz a leitura do arquivo através do método nextLine(). O cliente mostra as linhas, uma por uma, na tela do computador, conforme as recebe do servidor.
